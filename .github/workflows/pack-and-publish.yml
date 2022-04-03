@@ -27,3 +27,5 @@ jobs:
       run: dotnet test -c Release --no-build --verbosity normal
     - name: Pack
       run: dotnet pack -c Release src/MCB.Core.Domain.Entities.Abstractions/MCB.Core.Domain.Entities.Abstractions.csproj /p:Version='${{ github.event.inputs.version }}'
+    - name: Publish
+      run: dotnet nuget push *${{ github.event.inputs.version }}.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
