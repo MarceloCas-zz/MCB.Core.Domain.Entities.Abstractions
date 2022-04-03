@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C544423E-872A-478B-A511-CC06FF3321F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCB.Core.Domain.Entities.Abstractions", "src\MCB.Core.Domain.Entities.Abstractions\MCB.Core.Domain.Entities.Abstractions.csproj", "{22FD7A92-7EF1-4E19-9B16-C803358FEC0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22FD7A92-7EF1-4E19-9B16-C803358FEC0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22FD7A92-7EF1-4E19-9B16-C803358FEC0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22FD7A92-7EF1-4E19-9B16-C803358FEC0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22FD7A92-7EF1-4E19-9B16-C803358FEC0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22FD7A92-7EF1-4E19-9B16-C803358FEC0F} = {C544423E-872A-478B-A511-CC06FF3321F3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19FCD5FF-44E4-4453-8CEA-5FA9F6FB3D97}
+	EndGlobalSection
+EndGlobal
