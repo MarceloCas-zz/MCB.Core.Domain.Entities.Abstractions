@@ -26,4 +26,4 @@ jobs:
     - name: Test
       run: dotnet test -c Release --no-build --verbosity normal
     - name: Pack
-      run: dotnet pack -c Release .\src\MCB.Core.Domain.Entities.Abstractions\MCB.Core.Domain.Entities.Abstractions.csproj -c Release /p:Version={{ github.event.inputs.version }}
+      run: dotnet pack -c Release src\MCB.Core.Domain.Entities.Abstractions\MCB.Core.Domain.Entities.Abstractions.csproj -c Release /p:Version={{ github.event.inputs.version }}
