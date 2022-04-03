@@ -33,6 +33,7 @@ jobs:
     - name: Build And Test
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       shell: pwsh
       run: |
         ./.sonar/scanner/dotnet-sonarscanner begin /k:"MarceloCas_MCB.Core.Domain.Entities.Abstractions" /o:"marcelocas-token" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
