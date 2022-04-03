@@ -27,7 +27,7 @@ jobs:
       shell: pwsh
       run: |
         New-Item -Path .\.sonar\scanner -ItemType Directory
-        dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
+        dotnet tool update dotnet-sonarscanner --tool-path /.sonar/scanner
     - name: Restore dependencies
       run: dotnet restore
     - name: Build And Test
@@ -35,7 +35,7 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       shell: pwsh
       run: |
-        .\.sonar\scanner\dotnet-sonarscanner begin /k:"MarceloCas_MCB.Core.Domain.Entities.Abstractions" /o:"marcelocas-token" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
+        /.sonar/scanner/dotnet-sonarscanner begin /k:"MarceloCas_MCB.Core.Domain.Entities.Abstractions" /o:"marcelocas-token" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
         dotnet build --no-restore
         dotnet test --no-build --verbosity normal
-        .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+        /.sonar/scanner/dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
