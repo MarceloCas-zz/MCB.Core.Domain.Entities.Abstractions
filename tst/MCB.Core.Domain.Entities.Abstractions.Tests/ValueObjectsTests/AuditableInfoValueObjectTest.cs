@@ -12,7 +12,7 @@ namespace MCB.Core.Domain.Entities.Abstractions.Tests.ValueObjectsTests
     public class AuditableInfoValueObjectTest
     {
         [Fact]
-        public void AuditableInfoValueObject_Must_Be_Created_With_CreationInfo()
+        public void AuditableInfoValueObject_Should_Be_Created_With_CreationInfo()
         {
             // Arrange
             var createdBy = "marcelo.castelo@outlook.com";
@@ -37,7 +37,7 @@ namespace MCB.Core.Domain.Entities.Abstractions.Tests.ValueObjectsTests
         }
 
         [Fact]
-        public void AuditableInfoValueObject_Must_Be_Created_With_UpdateInfo()
+        public void AuditableInfoValueObject_Should_Be_Created_With_UpdateInfo()
         {
             // Arrange
             var createdBy = "marcelo.castelo@outlook.com";
