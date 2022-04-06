@@ -7,7 +7,6 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>Marcelo Castelo Branco</Authors>
 		<Company>MCB</Company>
-		<Version>1.0.0-alpha</Version>
 	</PropertyGroup>
 
 </Project>
