@@ -6,6 +6,7 @@ namespace MCB.Core.Domain.Entities.Abstractions
     {
         // Properties
         Guid Id { get; }
+        Guid TenantId { get; }
         AuditableInfoValueObject AuditableInfo { get; }
         DateTimeOffset RegistryVersion { get; }
     }
