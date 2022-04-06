@@ -17,13 +17,15 @@ namespace MCB.Core.Domain.Entities.Abstractions.Tests.ValueObjectsTests
             // Arrange
             var createdBy = "marcelo.castelo@outlook.com";
             var createdAt = DateTimeOffset.UtcNow;
+            var sourcePlatform = "AppDemo";
 
             // Act
             var auditableInfoValueObject = new AuditableInfoValueObject(
                 createdBy,
                 createdAt,
                 updatedBy: null,
-                updatedAt: null
+                updatedAt: null,
+                sourcePlatform
             );
 
             // Assert
@@ -31,6 +33,7 @@ namespace MCB.Core.Domain.Entities.Abstractions.Tests.ValueObjectsTests
             auditableInfoValueObject.CreatedAt.Should().Be(createdAt);
             auditableInfoValueObject.UpdatedBy.Should().BeNull();
             auditableInfoValueObject.UpdatedAt.Should().BeNull();
+            auditableInfoValueObject.SourcePlatform.Should().Be(sourcePlatform);
         }
 
         [Fact]
@@ -41,13 +44,15 @@ namespace MCB.Core.Domain.Entities.Abstractions.Tests.ValueObjectsTests
             var createdAt = DateTimeOffset.UtcNow.AddDays(-1);
             var updatedBy = "marcelo.castelo@github.com";
             var updatedAt = DateTimeOffset.UtcNow;
+            var sourcePlatform = "AppDemo";
 
             // Act
             var auditableInfoValueObject = new AuditableInfoValueObject(
                 createdBy,
                 createdAt,
                 updatedBy,
-                updatedAt
+                updatedAt,
+                sourcePlatform
             );
 
             // Assert
@@ -55,6 +60,7 @@ namespace MCB.Core.Domain.Entities.Abstractions.Tests.ValueObjectsTests
             auditableInfoValueObject.CreatedAt.Should().Be(createdAt);
             auditableInfoValueObject.UpdatedBy.Should().Be(updatedBy);
             auditableInfoValueObject.UpdatedAt.Should().Be(updatedAt);
+            auditableInfoValueObject.SourcePlatform.Should().Be(sourcePlatform);
         }
     }
 }
