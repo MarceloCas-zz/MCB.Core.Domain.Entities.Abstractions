@@ -5,14 +5,14 @@
         // Properties
         public string CreatedBy { get; }
         public DateTimeOffset CreatedAt { get; }
-        public string UpdatedBy { get; }
+        public string? UpdatedBy { get; }
         public DateTimeOffset? UpdatedAt { get; }
 
         // Constructors
         public AuditableInfoValueObject(
             string createdBy,
             DateTimeOffset createdAt,
-            string updatedBy,
+            string? updatedBy,
             DateTimeOffset? updatedAt
         )
         {
