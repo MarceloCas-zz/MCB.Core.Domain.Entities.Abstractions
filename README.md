@@ -1,7 +1,7 @@
 
 # MCB.Core.Domain.Entities.Abstractions
 
-This project is a source code of MCB.Core.Domain.Entities.Abstractions [nuget package](https://www.nuget.org/packages/MCB.Core.Domain.Entities.Abstractions/). This package contains the abstractions for Domain Entities based on Domain-Driven Design concepts like Entities, Aggregations Root and etc.
+This project is a source code of [MCB.Core.Domain.Entities.Abstractions](https://www.nuget.org/packages/MCB.Core.Domain.Entities.Abstractions/) nuget package. This package contains the abstractions for Domain Entities based on Domain-Driven Design concepts like Entities, Aggregations Root and etc.
 
 
 ## Labels
