@@ -1,5 +1,4 @@
 ﻿using MCB.Core.Domain.Entities.Abstractions.ValueObjects;
-using MCB.Core.Infra.CrossCutting.DesignPatterns.Validator.Abstractions.Models;
 
 namespace MCB.Core.Domain.Entities.Abstractions
 {
@@ -10,6 +9,6 @@ namespace MCB.Core.Domain.Entities.Abstractions
         Guid TenantId { get; }
         AuditableInfoValueObject AuditableInfo { get; }
         DateTimeOffset RegistryVersion { get; }
-        IEnumerable<ValidationMessage> ValidationMessageCollection { get; }
+        ValidationInfoValueObject ValidationInfo { get; }
     }
 }
