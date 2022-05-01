@@ -19,17 +19,17 @@ namespace MCB.Core.Domain.Entities.Abstractions.Tests.ValueObjectsTests
             var auditableInfoValueObject = new AuditableInfoValueObject(
                 createdBy,
                 createdAt,
-                updatedBy: null,
-                updatedAt: null,
+                lastUpdatedBy: null,
+                lastUpdatedAt: null,
                 sourcePlatform
             );
 
             // Assert
             auditableInfoValueObject.CreatedBy.Should().Be(createdBy);
             auditableInfoValueObject.CreatedAt.Should().Be(createdAt);
-            auditableInfoValueObject.UpdatedBy.Should().BeNull();
-            auditableInfoValueObject.UpdatedAt.Should().BeNull();
-            auditableInfoValueObject.SourcePlatform.Should().Be(sourcePlatform);
+            auditableInfoValueObject.LastUpdatedBy.Should().BeNull();
+            auditableInfoValueObject.LastUpdatedAt.Should().BeNull();
+            auditableInfoValueObject.LastSourcePlatform.Should().Be(sourcePlatform);
         }
 
         [Fact]
@@ -54,9 +54,9 @@ namespace MCB.Core.Domain.Entities.Abstractions.Tests.ValueObjectsTests
             // Assert
             auditableInfoValueObject.CreatedBy.Should().Be(createdBy);
             auditableInfoValueObject.CreatedAt.Should().Be(createdAt);
-            auditableInfoValueObject.UpdatedBy.Should().Be(updatedBy);
-            auditableInfoValueObject.UpdatedAt.Should().Be(updatedAt);
-            auditableInfoValueObject.SourcePlatform.Should().Be(sourcePlatform);
+            auditableInfoValueObject.LastUpdatedBy.Should().Be(updatedBy);
+            auditableInfoValueObject.LastUpdatedAt.Should().Be(updatedAt);
+            auditableInfoValueObject.LastSourcePlatform.Should().Be(sourcePlatform);
         }
     }
 }

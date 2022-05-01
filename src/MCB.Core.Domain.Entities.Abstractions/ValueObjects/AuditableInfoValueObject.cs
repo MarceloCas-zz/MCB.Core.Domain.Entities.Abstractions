@@ -5,24 +5,24 @@
         // Properties
         public string CreatedBy { get; }
         public DateTimeOffset CreatedAt { get; }
-        public string? UpdatedBy { get; }
-        public DateTimeOffset? UpdatedAt { get; }
-        public string SourcePlatform { get; }
+        public string? LastUpdatedBy { get; }
+        public DateTimeOffset? LastUpdatedAt { get; }
+        public string LastSourcePlatform { get; }
 
         // Constructors
         public AuditableInfoValueObject(
             string createdBy,
             DateTimeOffset createdAt,
-            string? updatedBy,
-            DateTimeOffset? updatedAt,
-            string sourcePlatform
+            string? lastUpdatedBy,
+            DateTimeOffset? lastUpdatedAt,
+            string lastSourcePlatform
         )
         {
             CreatedBy = createdBy;
             CreatedAt = createdAt;
-            UpdatedBy = updatedBy;
-            UpdatedAt = updatedAt;
-            SourcePlatform = sourcePlatform;
+            LastUpdatedBy = lastUpdatedBy;
+            LastUpdatedAt = lastUpdatedAt;
+            LastSourcePlatform = lastSourcePlatform;
         }
     }
 }
