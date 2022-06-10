@@ -1,7 +1,6 @@
-﻿namespace MCB.Core.Domain.Entities.Abstractions
+﻿namespace MCB.Core.Domain.Entities.Abstractions;
+
+public interface IAggregationRoot
+    : IDomainEntity
 {
-    public interface IAggregationRoot
-        : IDomainEntity
-    {
-    }
 }
