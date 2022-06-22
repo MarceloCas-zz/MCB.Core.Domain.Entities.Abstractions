@@ -6,7 +6,7 @@ public interface IDomainEntitySpecifications
     bool TenantIdShouldRequired(Guid tenantId);
 
     bool CreationInfoShouldRequired(DateTimeOffset createdAt, string createdBy);
-    bool CreationInfoIsShouldValidSpecification(DateTimeOffset createdAt, string createdBy);
+    bool CreationInfoShouldValidSpecification(DateTimeOffset createdAt, string createdBy);
 
     bool UpdateInfoShouldRequired(DateTimeOffset lastUpdateDate, string lastUpdatedBy);
     bool UpdateInfoShouldValidSpecification(DateTimeOffset createdAt, DateTimeOffset lastUpdatedAt, string lastUpdatedBy);
