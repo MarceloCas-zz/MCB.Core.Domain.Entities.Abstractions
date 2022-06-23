@@ -1,5 +1,6 @@
-﻿namespace MCB.Core.Domain.Entities.Abstractions.ValueObjects;
+﻿using System;
 
+namespace MCB.Core.Domain.Entities.Abstractions.ValueObjects;
 public struct AuditableInfoValueObject
 {
     // Properties
