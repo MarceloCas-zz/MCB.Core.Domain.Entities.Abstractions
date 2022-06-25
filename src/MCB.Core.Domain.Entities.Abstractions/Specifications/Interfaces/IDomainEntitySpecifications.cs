@@ -11,6 +11,9 @@ public interface IDomainEntitySpecifications
     bool UpdateInfoShouldRequired(DateTimeOffset? lastUpdateAt, string lastUpdatedBy);
     bool UpdateInfoShouldValid(DateTimeOffset createdAt, DateTimeOffset? lastUpdatedAt, string lastUpdatedBy);
 
+    bool SourcePlatformShouldRequired(string sourcePlatform);
+    bool SourcePlatformShouldValid(string sourcePlatform);
+
     bool RegistryVersionShouldRequired(DateTimeOffset registryVersion);
     bool RegistryVersionShouldValid(DateTimeOffset registryVersion);
 }
