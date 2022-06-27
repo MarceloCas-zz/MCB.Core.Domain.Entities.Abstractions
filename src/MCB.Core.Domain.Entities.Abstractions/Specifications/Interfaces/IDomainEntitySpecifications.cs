@@ -11,8 +11,8 @@ public interface IDomainEntitySpecifications
     bool CreatedByShouldRequired(string createdBy);
     bool CreatedByShouldValid(string createdBy);
 
-    bool LastUpdatedByShouldRequired(DateTimeOffset? lastUpdatedAt);
-    bool LastUpdatedByShouldValid(DateTimeOffset? lastUpdatedAt);
+    bool LastUpdatedAtShouldRequired(DateTimeOffset? lastUpdatedAt);
+    bool LastUpdatedAtShouldValid(DateTimeOffset? lastUpdatedAt);
 
     bool LastUpdatedByShouldRequired(string lastUpdatedBy);
     bool LastUpdatedByShouldValid(string lastUpdatedBy);
