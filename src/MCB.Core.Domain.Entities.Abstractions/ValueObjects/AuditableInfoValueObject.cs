@@ -5,15 +5,15 @@ public struct AuditableInfoValueObject
     // Properties
     public string CreatedBy { get; }
     public DateTimeOffset CreatedAt { get; }
-    public string LastUpdatedBy { get; }
+    public string? LastUpdatedBy { get; }
     public DateTimeOffset? LastUpdatedAt { get; }
-    public string LastSourcePlatform { get; }
+    public string? LastSourcePlatform { get; }
 
     // Constructors
     public AuditableInfoValueObject(
         string createdBy,
         DateTimeOffset createdAt,
-        string lastUpdatedBy,
+        string? lastUpdatedBy,
         DateTimeOffset? lastUpdatedAt,
         string lastSourcePlatform
     )
