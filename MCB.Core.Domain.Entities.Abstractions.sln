@@ -9,7 +9,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCB.Core.Domain.Entities.Ab
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tst", "tst", "{9F3BE3F3-11F7-4A77-B7D5-FC7A1DE41032}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCB.Core.Domain.Entities.Abstractions.Tests", "tst\MCB.Core.Domain.Entities.Abstractions.Tests\MCB.Core.Domain.Entities.Abstractions.Tests.csproj", "{3B698B71-83AF-4249-99C9-1A50BA496085}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCB.Core.Domain.Entities.Abstractions.Tests", "tst\MCB.Core.Domain.Entities.Abstractions.Tests\MCB.Core.Domain.Entities.Abstractions.Tests.csproj", "{3B698B71-83AF-4249-99C9-1A50BA496085}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5246D780-390A-4C7D-89E4-42E217881495}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build-and-test.yml = .github\workflows\build-and-test.yml
+		.github\workflows\pack-and-publish.yml = .github\workflows\pack-and-publish.yml
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
