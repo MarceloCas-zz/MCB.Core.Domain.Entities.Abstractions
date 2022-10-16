@@ -1,4 +1,4 @@
-﻿namespace MCB.Core.Domain.Entities.Abstractions.Specifications.Interfaces;
+﻿namespace MCB.Core.Domain.Entities.Abstractions.Specifications;
 
 public interface IDomainEntitySpecifications
 {
